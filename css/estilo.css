@@ -1,0 +1,168 @@
+/* ================= variablesMenu ================= */
+/* ================= variablesHome ================= */
+/* ================= variablesExperience================= */
+/* ================= variablesGoUp================= */
+/* ================= variablesBotonMas================= */
+/* ================= variablesGaleria ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* ================= viewPortChecker================= */
+.hidden {
+  opacity: 0; }
+
+.visible {
+  opacity: 1; }
+
+.active {
+  color: #40a35b; }
+
+nav {
+  background-color: #FFF; }
+  nav .menuMovil {
+    background-color: #14344a;
+    color: #FFF; }
+  nav a {
+    color: #14344a; }
+  nav a:hover {
+    color: #40a35b; }
+
+/* ================= home ================= */
+.home {
+  background-image: url("../img/fondo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 0em; }
+  .home .perfil {
+    padding-top: 5em;
+    text-align: center; }
+    .home .perfil img {
+      margin-top: 2em;
+      width: auto;
+      border-radius: 50%; }
+  .home .textoInfo {
+    padding: 0.67em;
+    color: #14344a;
+    text-align: center; }
+  .home #typed2 {
+    background-color: #FFFFFF; }
+  .home .flechaMas {
+    margin-top: 6em;
+    padding: 7em;
+    display: flex;
+    justify-content: center;
+    align-self: flex-end; }
+    .home .flechaMas a {
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.4392156863);
+      padding: 2em; }
+    .home .flechaMas i {
+      color: #14344a; }
+    .home .flechaMas i:hover {
+      color: #40a35b; }
+
+/* ================= experience ================= */
+.experience {
+  padding-top: 3em;
+  background-color: #EAEAEA;
+  min-height: 40em; }
+
+.lenguajes {
+  padding: 3em;
+  background-color: #FFFFFF; }
+  .lenguajes .progress-bar {
+    background-color: #40a35b; }
+  .lenguajes p {
+    padding: 0.2em; }
+
+/* ================= projects================= */
+.projects {
+  min-height: 60em; }
+
+.galeria nav {
+  padding-top: 2em; }
+
+.galeriaFiltro {
+  padding: 0.67em; }
+  .galeriaFiltro li {
+    display: inline-block; }
+    .galeriaFiltro li a {
+      padding: 0.67em 2em;
+      background-color: #135b7c;
+      color: #FFFFFF;
+      text-decoration: none; }
+    .galeriaFiltro li a:hover {
+      color: #40a35b; }
+
+.contenidoGaleria img {
+  width: 100%;
+  padding: 0.67em; }
+.contenidoGaleria figcaption {
+  display: inline-block;
+  padding: 0.67em; }
+.contenidoGaleria p {
+  text-align: center; }
+.contenidoGaleria a {
+  color: #14344a; }
+.contenidoGaleria a:hover {
+  color: #40a35b; }
+
+.filtro-item {
+  width: 33%; }
+
+/* ================= footer ================= */
+footer {
+  background-color: #EAEAEA; }
+  footer a {
+    color: #14344a; }
+
+.enlacesSocial {
+  padding-top: 2em;
+  text-align: center; }
+  .enlacesSocial a {
+    text-decoration: none; }
+  .enlacesSocial a:hover {
+    color: #40a35b; }
+  .enlacesSocial i {
+    padding: 0 0.67em; }
+
+#pCopyRight a {
+  text-decoration: none; }
+#pCopyRight a:hover {
+  color: #40a35b; }
+
+/* ================= button UP ================= */
+.go-top {
+  position: fixed;
+  bottom: 2em;
+  right: 2em;
+  text-decoration: none;
+  color: #14344a;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  font-size: 12px;
+  padding: 1em;
+  display: none; }
+
+.go-top:hover {
+  color: #40a35b;
+  background-color: rgba(0, 0, 0, 0.6); }
+
+/* ================= mobile ================= */
+@media screen and (max-width: 460px) {
+  .home .perfil img {
+    width: 30%; }
+
+  .filtro-item {
+    width: 100%; }
+
+  .galeriaFiltro li {
+    background-color: #135b7c;
+    display: inline-block; }
+    .galeriaFiltro li a {
+      padding: 1em 1em;
+      text-decoration: none; } }
+
+/*# sourceMappingURL=estilo.css.map */

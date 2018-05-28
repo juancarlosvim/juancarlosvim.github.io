@@ -1,0 +1,249 @@
+/* ================= variablesMenu ================= */
+$fondo_menu: #FFF;
+$color_menu: #14344a;
+$color_blanco: #FFF;
+$color_enlaces_hoverMenu: #53e3ba;
+
+/* ================= variablesHome ================= */
+$altoMinHome: 0em;
+$ancho_imagen: auto;
+$ancho_imagenMovil: 30%;
+$borde_imagenPerfil: 50%;
+$rutaImagenFondoHome: "../img/fondo.jpg";
+$color_letra: #14344a;
+/* ================= variablesExperience================= */
+$alto_min: 40em;
+$fondo: #EAEAEA;
+$fondo_blanco: #FFFFFF;
+
+/* ================= variablesGoUp================= */
+$color_boton: #14344a;
+$fondo_boton: rgba(0, 0, 0, 0.3);
+$color_boton_hover: #40a35b;
+$fondo_boton_hover: rgba(0, 0, 0, 0.6);
+
+/* ================= variablesBotonMas================= */
+$fondo_botonMas: rgba(255, 255, 255, 0.4392156862745098);
+$color_botonMas: #14344a;
+
+/* ================= variablesGaleria ================= */
+$color_enlaces: #14344a;
+$color_enlaces_hover: #40a35b;
+//$fondo_enlaces_hover: rgba(29, 12, 167, 0.6);
+//$color_enlaces_hover: ;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* ================= viewPortChecker================= */
+.hidden{
+  opacity:0;
+}
+.visible{
+  opacity:1;
+}
+.active{
+  color: $color_enlaces_hover;
+}
+nav{
+  background-color: $fondo_menu;
+  .menuMovil{
+    background-color: $color_menu;
+    color: $color_blanco;
+  }
+  a{
+    color: $color_menu;
+  }
+  a:hover{
+    color: $color_enlaces_hover;
+  }
+}
+/* ================= home ================= */
+.home{
+  background-image: url($rutaImagenFondoHome);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: $altoMinHome;
+  .perfil{
+    padding-top: 5em;
+    text-align: center;
+    img{
+      margin-top: 2em;
+      width: $ancho_imagen;
+      border-radius: $borde_imagenPerfil;
+    }
+  }
+  .textoInfo{
+    padding: 0.67em;
+    color: $color_letra;
+    text-align: center;
+  }
+  #typed2{
+    background-color: $fondo_blanco;
+  }
+  .flechaMas{
+    margin-top: 6em;
+    padding: 7em;
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+    a{
+      border-radius: 50%;
+      background-color: $fondo_botonMas;
+      padding: 2em;
+    }
+
+    i{
+      color: $color_botonMas;
+    }
+    i:hover{
+      color: $color_enlaces_hover;
+    }
+  }
+}
+/* ================= experience ================= */
+.experience{
+  padding-top: 3em;
+  background-color: $fondo;
+  min-height: $alto_min;
+}
+.lenguajes{
+  padding: 3em;
+  background-color: $fondo_blanco;
+  .progress-bar{
+    background-color: $color_enlaces_hover;
+  }
+  p{
+    padding: 0.2em;
+  }
+
+}
+/* ================= projects================= */
+.projects{
+  min-height: 60em;
+
+}
+.galeria{
+  nav{
+    padding-top: 2em;
+  }
+}
+.galeriaFiltro{
+  padding: 0.67em;
+  li{
+    display: inline-block;
+    a{
+      padding: 0.67em 2em;
+      background-color: #135b7c;
+      color: $fondo_blanco;
+      text-decoration: none;
+    }
+    a:hover{
+      color: $color_enlaces_hover;
+
+    }
+  }
+}
+.contenidoGaleria{
+
+  img{
+    width: 100%;
+    padding: 0.67em;
+  }
+  figcaption{
+    display: inline-block;
+    padding: 0.67em;
+  }
+
+  p{
+    text-align: center;
+  }
+  a{
+    color: $color_enlaces;
+  }
+  a:hover{
+    color: $color_enlaces_hover;
+  }
+}
+.filtro-item{
+  width: 33%;
+}
+/* ================= footer ================= */
+footer{
+  background-color: $fondo;
+  a{
+    color: $color_enlaces;
+  }
+}
+.enlacesSocial{
+  padding-top: 2em;
+  text-align: center;
+  a{
+    text-decoration: none;
+
+  }
+  a:hover{
+    color: $color_enlaces_hover;
+  }
+  i{
+    padding: 0 0.67em;
+  }
+
+}
+#pCopyRight{
+  a{
+    text-decoration: none;
+  }
+  a:hover{
+    color: $color_enlaces_hover;
+  }
+}
+
+
+/* ================= button UP ================= */
+.go-top {
+  position: fixed;
+  bottom: 2em;
+  right: 2em;
+  text-decoration: none;
+  color: $color_boton;
+  background-color: $fondo_boton;
+  border-radius: 50%;
+  font-size: 12px;
+  padding: 1em;
+  display: none;
+}
+
+.go-top:hover {
+  color: $color_boton_hover;
+  background-color: $fondo_boton_hover;
+}
+/* ================= mobile ================= */
+
+@media screen and (max-width: 460px){
+  .home{
+    .perfil{
+      img{
+        width: $ancho_imagenMovil;
+      }
+    }
+  }
+
+  .filtro-item{
+    width: 100%;
+  }
+
+  .galeriaFiltro{
+    li{
+      background-color: #135b7c;
+      display: inline-block;
+      a{
+        padding: 1em 1em;
+        text-decoration: none;
+
+      }
+    }
+  }
+
+}
